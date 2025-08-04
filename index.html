@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAM Worship Project</title>
+    <!-- Google Fonts - Inter for body, Poppins for headings -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* This style block has been updated with colors from the JAM Worship logo. */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #fefcfc; /* A soft, off-white background */
+            color: #2d3748;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        /* The hero section background now uses a static image URL */
+        .hero-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.pexels.com/photos/15941916/pexels-photo-15941916/free-photo-of-african-man-playing-a-guitar.jpeg');
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .nav-link:hover {
+            color: #ffc2c2; /* Hover color now matches the logo's accent */
+        }
+
+        .card {
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+
+        .core-value-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        /* Icon color updated to match a new theme */
+        .core-value-item svg {
+            color: #ffc2c2; 
+        }
+
+        .scroll-top-btn {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            background-color: #ffc2c2; /* Scroll button color matches the logo's accent */
+            color: white;
+            border-radius: 9999px;
+            padding: 1rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1-px rgba(0, 0, 0, 0.06);
+            cursor: pointer;
+            display: none;
+            z-index: 1000;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Scroll to Top Button -->
+    <div id="scroll-top-btn" class="scroll-top-btn">
+        <svg xmlns="http://www.w3.000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18" />
+        </svg>
+    </div>
+
+    <!-- Header Section -->
+    <header class="bg-gray-800 text-white p-4 sticky top-0 z-50">
+        <div class="container mx-auto flex justify-between items-center">
+            <!-- Logo added here -->
+            <a href="#" class="flex items-center space-x-2">
+                <img src="unnamed (2).png" alt="JAM Worship Logo" class="h-14 w-14 rounded-full">
+                <span class="text-2xl font-bold tracking-wide">JAM WORSHIP</span>
+            </a>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#vision-mission" class="nav-link">Vision & Mission</a></li>
+                    <li><a href="#objectives" class="nav-link">Objectives</a></li>
+                    <li><a href="#activities" class="nav-link">Activities</a></li>
+                    <li><a href="#ministry-in-action" class="nav-link">Our Ministry</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero-section" class="hero-section text-white flex items-center justify-center h-screen" style="background-image: url('download.png');">
+        <div class="text-center p-8 max-w-2xl">
+            <h1 class="text-5xl font-extrabold mb-4">JAM Worship Project</h1>
+            <h2 class="text-2xl font-semibold italic tracking-wide">Transformation through true worship</h2>
+            <p class="mt-4 text-lg">Jesus And Me (JAM) Ministry is dedicated to transforming the current generation through the true act of worship. Join us on this journey.</p>
+        </div>
+    </section>
+
+    <main class="container mx-auto p-8 space-y-16">
+
+        <!-- About Section - Added a subtle background color -->
+        <section id="about" class="p-8 bg-pink-50 rounded-xl card">
+            <h2 class="text-4xl font-bold text-center text-gray-800 mb-8">About Us</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div>
+                    <h3 class="text-2xl font-semibold text-gray-700 mb-4">Introduction</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Jesus And Me (JAM) Ministry in Uganda is an establishment of 2024, by a group of youths with the vision of transforming the current generation through the true act of worship. The ministry therefore employs a variety of strategies to achieve her vision and objectives.
+                    </p>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-semibold text-gray-700 mb-4">Background</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        It is a Biblical mandate that we worship God and Him alone. It is an act that is designed not only to bring honor to Him who deserves honor, but also to bring a spirit of obedience and submission to the worshippers. The JAM ministry was started to explore the true act of worship and share this with communities.
+                    </p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Vision & Mission Section - Added a subtle background color -->
+        <section id="vision-mission" class="p-8 bg-white rounded-xl card">
+            <h2 class="text-4xl font-bold text-center text-gray-800 mb-8">Vision & Mission</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-gray-100 p-6 rounded-lg text-center">
+                    <h3 class="text-2xl font-semibold text-gray-700 mb-2">Our Vision</h3>
+                    <p class="text-lg text-gray-600">A transformed generation through the true act of worship.</p>
+                </div>
+                <div class="bg-gray-100 p-6 rounded-lg text-center">
+                    <h3 class="text-2xl font-semibold text-gray-700 mb-2">Our Mission</h3>
+                    <p class="text-lg text-gray-600">To empower and equip the current generation to become transformed through the true act of worship.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Objectives Section - Added a subtle background color and changed checkmark color -->
+        <section id="objectives" class="p-8 bg-pink-50 rounded-xl card">
+            <h2 class="text-4xl font-bold text-center text-gray-800 mb-8">Objectives</h2>
+            <ul class="list-none space-y-4 text-gray-600">
+                <li class="flex items-start gap-3">
+                    <span class="text-2xl text-pink-400">✓</span>
+                    <p>To provide effective worship programs for the youth who have chosen to explore the true act of worship whereby they receive encouragement, support, peer accountability, mentorship from like-minded fellows.</p>
+                </li>
+                <li class="flex items-start gap-3">
+                    <span class="text-2xl text-pink-400">✓</span>
+                    <p>To provide mechanism for the youth to reach out to the fellow youth who may need to learn more about the true worship through scripture sharing, music, mentorship programs and fun as well.</p>
+                </li>
+                <li class="flex items-start gap-3">
+                    <span class="text-2xl text-pink-400">✓</span>
+                    <p>To provide a platform where the youth and other members of the community can be sensitized and empowered to develop Christ-like character, values and principles and base their lives on the truth.</p>
+                </li>
+                <li class="flex items-start gap-3">
+                    <span class="text-2xl text-pink-400">✓</span>
+                    <p>To introduce the current youth generation to exploration of a variety of culture of worship based on the truth for transformation.</p>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Core Values Section - Added a subtle background color and changed icon color -->
+        <section id="core-values" class="p-8 bg-white rounded-xl card">
+            <h2 class="text-4xl font-bold text-center text-gray-800 mb-8">Our Core Values</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                <div class="bg-gray-100 rounded-lg p-4 text-center core-value-item">
+                    <svg xmlns="http://www.w3.000/svg" class="h-6 w-6 text-pink-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.485 9.176 5 7.5 5 5.576 5 4 6.57 4 8.5c0 2.067 2.227 3.551 4.545 4.391a13.33 13.33 0 011.666.273M12 6.253c1.168.767 2.824 1.517 4.5 1.517 1.924 0 3.5-.833 3.5-2.5 0-1.92-1.576-3.5-3.5-3.5C15.176 2.5 13.844 3.324 12 5" />
+                    </svg>
+                    <p class="font-medium text-gray-700">Learning</p>
+                </div>
+                <div class="bg-gray-100 rounded-lg p-4 text-center core-value-item">
+                    <svg xmlns="http://www.w3.000/svg" class="h-6 w-6 text-pink-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    <p class="font-medium text-gray-700">Character</p>
+                </div>
+                <div class="bg-gray-100 rounded-lg p-4 text-center core-value-item">
+                    <svg xmlns="http://www.w3.000/svg" class="h-6 w-6 text-pink-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.5a11.955 11.955 0 01-9.618 5.484A12.001 12.001 0 0012 22a12.001 12.001 0 009.618-14.016z" />
+                    </svg>
+                    <p class="font-medium text-gray-700">Integrity</p>
+                </div>
+                <div class="bg-gray-100 rounded-lg p-4 text-center core-value-item">
+                    <svg xmlns="http://www.w3.000/svg" class="h-6 w-6 text-pink-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                    </svg>
+                    <p class="font-medium text-gray-700">Proactivity</p>
+                </div>
+                <div class="bg-gray-100 rounded-lg p-4 text-center core-value-item">
+                    <svg xmlns="http://www.w3.000/svg" class="h-6 w-6 text-pink-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    <p class="font-medium text-gray-700">Trustworthy</p>
+                </div>
+                <div class="bg-gray-100 rounded-lg p-4 text-center core-value-item">
+                    <svg xmlns="http://www.w3.000/svg" class="h-6 w-6 text-pink-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    <p class="font-medium text-gray-700">Commitment</p>
+                </div>
+                <div class="bg-gray-100 rounded-lg p-4 text-center core-value-item">
+                    <svg xmlns="http://www.w3.000/svg" class="h-6 w-6 text-pink-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 11c0 1.657-1.343 3-3 3m-4 0c-1.657 0-3-1.343-3-3m0 0s.19-2.316 2.05-4.237c1.86-1.922 4.95-3.763 8.95-3.763 4 0 7.09 1.841 8.95 3.763 1.86 1.921 2.05 4.237 2.05 4.237-1.657 0-3-1.343-3-3m-4 0a3 3 0 100 6 3 3 0 000-6z" />
+                    </svg>
+                    <p class="font-medium text-gray-700">Responsibility</p>
+                </div>
+                <div class="bg-gray-100 rounded-lg p-4 text-center core-value-item">
+                    <svg xmlns="http://www.w3.000/svg" class="h-6 w-6 text-pink-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a1.996 1.996 0 00-1.87 1.815c0 .356.126.697.351.983L14.7 10H17a1 1 0 011 1v2a1 1 0 01-1 1h-2.3l-2.68 3.518a1.5 1.5 0 01-1.31 1.767H8.5a1.5 1.5 0 01-1.31-1.767L4.7 14H2a1 1 0 01-1-1v-2a1 1 0 011-1h2.7l2.68-3.518a1.5 1.5 0 011.31-1.767H15.5a1.5 1.5 0 011.31 1.767L19.3 14H22a1 1 0 011 1v2a1 1 0 01-1 1h-2.3l-2.68 3.518a1.5 1.5 0 01-1.31-1.767L8.7 14H6a1 1 0 01-1-1v-2a1 1 0 011-1h2.3l2.68-3.518z" />
+                    </svg>
+                    <p class="font-medium text-gray-700">Humanity & Kindness</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Activities Section - Added a subtle background color -->
+        <section id="activities" class="p-8 bg-pink-50 rounded-xl card">
+            <h2 class="text-4xl font-bold text-center text-gray-800 mb-8">Our Activities</h2>
+            <ul class="list-disc list-inside space-y-2 text-gray-600 pl-4">
+                <li>Conducting regular JAM meetings for the members / fellowships</li>
+                <li>Potlucks</li>
+                <li>Mentorship programs (includes providing insightful information, literature, resource material and resource people)</li>
+                <li>Providing counseling and moral support for the youth who are facing various challenges.</li>
+                <li>Conducting seminars, conferences, competitions, debates, talent shows, sports, art and other similar events.</li>
+                <li>Conducting trainings and regular meetings for JAM leaders.</li>
+                <li>Conducting Camps and retreats.</li>
+                <li>Conducting ministerial and or tourist trips</li>
+                <li>Community service</li>
+                <li>Life skills training</li>
+            </ul>
+        </section>
+
+        <!-- New: Our Ministry in Action Section -->
+        <section id="ministry-in-action" class="p-8 bg-white rounded-xl card">
+            <h2 class="text-4xl font-bold text-center text-gray-800 mb-8">Our Ministry in Action</h2>
+            <p class="text-center text-gray-600 mb-8">See some of the work we do in our community to spread the word of God and support others.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Bible Study Card -->
+                <div class="rounded-xl overflow-hidden bg-gray-100 shadow-md">
+                    <img src="bible.png" alt="A group of people doing a bible study" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold text-gray-800">Bible Study & Fellowship</h3>
+                        <p class="text-gray-600 mt-2">We come together to study the word of God and grow in faith as a community.</p>
+                    </div>
+                </div>
+                <!-- Sunday School Visit Card -->
+                <div class="rounded-xl overflow-hidden bg-gray-100 shadow-md">
+                    <img src="sund.png" alt="Children in a Sunday school class" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold text-gray-800">Children's Sunday School</h3>
+                        <p class="text-gray-600 mt-2">We visit and support children's Sunday schools to nurture the next generation of worshippers.</p>
+                    </div>
+                </div>
+                <!-- Home Visits Card -->
+                <div class="rounded-xl overflow-hidden bg-gray-100 shadow-md">
+                    <img src="vis.png" alt="People visiting a home" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold text-gray-800">Home Visits & Community Outreach</h3>
+                        <p class="text-gray-600 mt-2">We extend our ministry to homes and the wider community to offer support and share God's love.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section - Added a subtle background color -->
+        <section id="contact" class="p-8 bg-pink-50 rounded-xl card">
+            <h2 class="text-4xl font-bold text-center text-gray-800 mb-8">Contact Us</h2>
+            <div class="text-center text-gray-600">
+                <p>Feel free to reach out to us for more information or to get involved.</p>
+                <div class="mt-4 flex flex-col items-center space-y-2">
+                    <a href="mailto:info@jamworship.org" class="text-blue-500 hover:text-blue-700">
+                        <svg xmlns="http://www.w3.000/svg" class="h-5 w-5 inline-block mr-2" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+                            <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+                        </svg>
+                    
+                    </a>
+                    <a href="tel:+256700000000" class="text-blue-500 hover:text-blue-700">
+                        <svg xmlns="http://www.w3.000/svg" class="h-5 w-5 inline-block mr-2" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M2 3a1 1 0 011-1h3a1 1 0 011 1v2a1 1 0 01-.293.707L4.586 7.586A1 1 0 014 7h-.5a1 1 0 010-2H6V3H2a1 1 0 01-1-1zm14 0a1 1 0 011-1h3a1 1 0 011 1v2a1 1 0 01-.293.707L15.414 7.586A1 1 0 0116 7h.5a1 1 0 010-2H14V3z" />
+                        </svg>
+                        +256-783-151-841
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 text-white p-6 text-center">
+        <p>&copy; 2024 JAM Worship Project. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Scroll to top button functionality
+        const scrollTopBtn = document.getElementById('scroll-top-btn');
+
+        window.onscroll = function() {
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                scrollTopBtn.style.display = "block";
+            } else {
+                scrollTopBtn.style.display = "none";
+            }
+        };
+
+        scrollTopBtn.addEventListener('click', function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+</body>
+</html>
