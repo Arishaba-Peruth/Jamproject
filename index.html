@@ -339,6 +339,16 @@
                 behavior: 'smooth'
             });
         });
+
+         // Get the button and the menu elements
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    // Add a click event listener to the button
+    mobileMenuButton.addEventListener('click', function() {
+        // Toggle the 'hidden' class on the menu
+        mobileMenu.classList.toggle('hidden');
+    });
     </script>
 </body>
 </html>
